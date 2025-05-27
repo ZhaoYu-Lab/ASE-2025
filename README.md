@@ -11,5 +11,5 @@ This is the performance and greenness comparison of the proposed Coding-Fuse met
 ![Additional Table III](https://github.com/SEOpenLab/ASE-2025/blob/main/A-CSD.jpg)
 
 ## Additional Results for Discussion
-![Additional Figure 1](https://github.com/SEOpenLab/ASE-2025/blob/main/D-CCD.jpg)
-![Additional Figure 2](https://github.com/SEOpenLab/ASE-2025/blob/main/D-TDD.jpg)
+![Additional Figure 1](https://github.com/SEOpenLab/ASE-2025/blob/main/D-CCD.png)
+![Additional Figure 2](https://github.com/SEOpenLab/ASE-2025/blob/main/D-TDD.png)
