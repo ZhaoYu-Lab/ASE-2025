@@ -57,7 +57,7 @@ def truncated_svd(x):
 truncated_svd(np.random.randn(20, 10).astype(np.float64))
 
 
-class LogME(object):
+class Evidence(object):
     def __init__(self, regression=False):
         """
             :param regression: whether regression
