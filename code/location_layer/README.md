@@ -7,5 +7,4 @@ The way to use it is to directly execute setcode to get the maximum evidence val
 
 In the run.py file, modify the number of layers loaded by the model to calculate the maximum evidence score layer by layer. 
 
-The layer with the largest score is the potential best layer.
 
