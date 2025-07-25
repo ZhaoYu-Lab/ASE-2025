@@ -523,7 +523,6 @@ def main():
         model = model_class(config)
     """
 
-    # 加载 BERT-base 和 CodeBERT-base 模型
     config_1 = AutoConfig.from_pretrained("./bert-base")
     tokenizer_1 = AutoTokenizer.from_pretrained("./bert-base")
     model_1 = AutoModel.from_pretrained("./bert-base",config=config_1)
@@ -540,7 +539,7 @@ def main():
         args.block_size = tokenizer_1.max_len_single_sentence  # Our input block size will be the max possible for the model
     args.block_size = min(args.block_size, tokenizer_1.max_len_single_sentence)
 
-    model=Model(model_1,model_2,config,tokenizer_2,args) #tokenizer是无效参数 config是用来传递维度的-不影响
+    model=Model(model_1,model_2,config,tokenizer_2,args) 
 
 
 
