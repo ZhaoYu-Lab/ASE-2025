@@ -8,5 +8,16 @@ If you need to repeat the performance values ​​of the experimental results, 
 
 If you need to perform the entire experiment, that is, the entire process from training to testing, we recommend that you directly execute all the commands of setcode, but before that you also need to perform the first two steps above.
 
+## Details
+### Dataset Partition
+code clone detection: Train-901028, Valid-415416, Test-415416
+
+code smell detection: Train-1089, Valid-350, Test-350
+
+technical debt detection: Train-24034, Valid-7674, Test-6652
+### Finetune Partition
+
+For code clone detection, use 10% Train and 10% Valid for fine-tuning, for code smell detection and technical debt detection, use full Train and Valid for fine-tuning.
+
 If you have any questions, you can leave a message.
 
