@@ -42,6 +42,19 @@ We find the identified potential best layer remained unchanged on the TDD task o
 |   11  |   0.251451717   |   0.290002731   |
 |   12  |   0.245410281   |   0.332676078   |
 
+### Greenness Metrics
+To comprehensively evaluate the greenness, we adopt four widely used metrics: training throughput, GPU memory usage during training, inference latency, and final model storage size. These metrics reflect both the efficiency of the training process and the environmental cost of real-world deployment. These four are also commonly used metrics in related fields, which can achieve exhaustive evaluations of greenness in actual deployment.
+
+Training throughput measures how quickly data can be processed during training. Higher throughput reduces training time, leading to lower energy consumption and carbon emissions. The unit is example/second in this paper.
+
+GPU memory usage indicates the hardware footprint during training. Models requiring less memory can be trained on smaller, more energy-efficient GPUs, thereby reducing both electricity and cooling costs. The unit is MB in this paper.
+
+Inference latency is critical in deployment, especially on edge devices or in real-time systems. Lower latency implies faster response and reduced power usage per inference task. The unit is second in this paper.
+
+Model storage size determines the resources needed for storing and transferring the model. Smaller models are easier to deploy across platforms and consume less disk space and bandwidth. The unit is MB in this paper.
+
+
+
 
 If you have any questions, you can leave a message.
 
