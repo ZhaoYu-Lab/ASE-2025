@@ -24,6 +24,7 @@ The training and testing commands and hyperparameters can be found in the setcod
 
 ### Non-CLS representation 
 To confirm the impact of non-CLS representation, we conduct a preliminary experiment through adopting average-pooling representation method (since it takes too much time to run identifiers’ representations) that captures both identifiers and code tokens [https://doi.org/10.1016/j.eswa.2025.126762] as non-CLS representation. 
+
 We find the identified potential best layer remained unchanged on the TDD task of CodeBERT, as shown below, the potentially best performing layer is still layer 7, followed by layer 6, indicating that specific feature extraction methods would not impact Coding-Fuse on locating the best layer.
 
 | Layer | Average-pooling |       CLS       |
