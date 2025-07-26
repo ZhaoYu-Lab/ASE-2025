@@ -20,7 +20,7 @@ technical debt detection: Train-24034, Valid-7674, Test-6652
 For code clone detection, use 10% Train and 10% Valid for fine-tuning, for code smell detection and technical debt detection, use full Train and Valid for fine-tuning.
 
 ### Hyperparameters
-
+The training and testing commands and hyperparameters can be found in the setcode files in each folder.
 
 If you have any questions, you can leave a message.
 
