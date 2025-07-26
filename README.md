@@ -51,7 +51,7 @@ Training **throughput** measures how quickly data can be processed during traini
 
 **GPU** memory usage indicates the hardware footprint during training. Models requiring less memory can be trained on smaller, more energy-efficient GPUs, thereby reducing both electricity and cooling costs. The unit is MB in this paper.
 
-Prediction **latency** is critical in deployment, especially on edge devices or in real-time systems. Lower latency implies faster response and reduced power usage. The unit is second in this paper.
+Test **latency** is critical in deployment, especially on edge devices or in real-time systems. Lower latency implies faster response and reduced power usage. The unit is second in this paper.
 
 Model **storage** size determines the resources needed for storing and transferring the model. Smaller models are easier to deploy across platforms and consume less disk space and bandwidth. The unit is MB in this paper.
 
