@@ -22,28 +22,6 @@ For code clone detection, use 10% Train and 10% Valid for fine-tuning, for code 
 ### Hyperparameters
 The training and testing commands and hyperparameters can be found in the setcode files in each folder. Training hyperparameters such as learning rate, batch size, and random seed are aligned with FMF and OSM in the same task and scenario to ensure fair and optimal comparisons.
 
-### Non-CLS representation 
-To confirm the impact of non-CLS representation, we conduct a preliminary experiment through adopting average-pooling representation method (since it takes too much time to run identifiers’ representations) that captures both identifiers and code tokens [https://doi.org/10.1016/j.eswa.2025.126762] as non-CLS representation. 
-
-We find the identified potential best layer remained unchanged on the TDD task of CodeBERT, as shown below, the potentially best performing layer is still layer 7, followed by layer 6, indicating that specific feature extraction methods would not impact Coding-Fuse on locating the best layer. 
-
-And we also find the performance of TDD has been **improved** by Coding-Fuse with average-pooling representation on CodeBERT-6+BERT-5 (i.e., F1: 0.786 -> 0.814, AUC-PR: 0.815 ->0.825).
-
-| Layer | Average-pooling |       CLS       |
-|:-----:|:---------------:|:---------------:|
-|   1   |    0.17480215   |   0.225054745   |
-|   2   |   0.194034255   |    0.27882957   |
-|   3   |   0.224214224   |   0.294902097   |
-|   4   |   0.252783222   |   0.326180597   |
-|   5   |   0.287419558   |   0.350668591   |
-| **6** | **0.289376665** |  **0.36186484** |
-| **7** | **0.293355693** | **0.374065596** |
-|   8   |   0.276642499   |   0.352729261   |
-|   9   |   0.266328177   |   0.323606751   |
-|   10  |   0.255506349   |   0.295021258   |
-|   11  |   0.251451717   |   0.290002731   |
-|   12  |   0.245410281   |   0.332676078   |
-
 ### Greenness Metrics
 To comprehensively evaluate the greenness, we adopt four widely used metrics: training throughput, GPU memory usage during training, inference latency, and final model storage size. These metrics reflect both the efficiency of the training process and the environmental cost of real-world deployment. These four are also commonly used metrics in related fields, which can achieve exhaustive evaluations of greenness in actual deployment.
 
