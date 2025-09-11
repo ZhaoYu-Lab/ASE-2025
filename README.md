@@ -23,7 +23,7 @@ For code clone detection, use 10% Train and 10% Valid for fine-tuning, for code 
 The training and testing commands and hyperparameters can be found in the setcode files in each folder. Training hyperparameters such as learning rate, batch size, and random seed are aligned with FMF and OSM in the same task and scenario to ensure fair and optimal comparisons.
 
 ### Greenness Metrics
-To comprehensively evaluate the greenness, we adopt four widely used metrics: training throughput, GPU memory usage during training, inference latency, and final model storage size. These metrics reflect both the efficiency of the training process and the environmental cost of real-world deployment. These four are also commonly used metrics in related fields, which can achieve exhaustive evaluations of greenness in actual deployment.
+To comprehensively evaluate the greenness, we adopt four widely used metrics: training throughput, GPU memory usage during training, test latency, and final model storage size. These metrics reflect both the efficiency of the training process and the environmental cost of real-world deployment. These four are also commonly used metrics in related fields, which can achieve exhaustive evaluations of greenness in actual deployment.
 
 Training **throughput** measures how quickly data can be processed during training. Higher throughput reduces training time, leading to lower energy consumption and carbon emissions. The unit is example/second in this paper.
 
